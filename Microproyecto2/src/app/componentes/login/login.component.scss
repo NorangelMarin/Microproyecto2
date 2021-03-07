@@ -1,0 +1,40 @@
+.Login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;   
+
+    .Contenido{
+        background-image: linear-gradient(to bottom right, #2E9AFE,#0101DF);
+        border-radius: 5px;
+        border: solid black 2px;
+        width: 40%;
+        padding: 2%;
+        margin-top: 6vh;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        h1{
+            font-size: 100%;
+            text-align: center;
+            padding: 2%;
+            color: white;
+        }
+    }
+
+    button{
+        padding: 2%;
+        margin: 2%;
+        width: 95%;
+        border-radius: 5px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 100%;
+        border: #000 2px solid;
+        color: #000;
+    }
+    .atras{
+        background-color: #fff;
+    }
+    .google{
+        background-color: #A9F5F2;
+    }
+}
