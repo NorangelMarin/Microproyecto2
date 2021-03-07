@@ -8,7 +8,6 @@ import { ApiService } from 'src/app/servicios/api.service';
 })
 export class PeliculasComponent implements OnInit {
 
-  public peliculas:any = [];
   public tarjetas: Array<any> = []
 
   constructor(private ApiService: ApiService) { }

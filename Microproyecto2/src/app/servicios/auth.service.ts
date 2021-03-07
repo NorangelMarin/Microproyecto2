@@ -9,8 +9,8 @@ import {Observable} from 'rxjs';
 export class AuthService {
 
   constructor(private Auth: AngularFireAuth) { }
-  /*
-  async login(): Promise<firebase.User>{
+
+  async login(): Promise<firebase.User|null>{
     try{
       const provider = new firebase.auth.GoogleAuthProvider();
       const response = await this.Auth.signInWithPopup(provider);
@@ -27,7 +27,7 @@ export class AuthService {
     return null
   }
 
-  getCurrentUser(): Observable<firebase.User>{
+  getCurrentUser(): Observable<firebase.User|null>{
     return this.Auth.user;
   }
 
@@ -40,5 +40,4 @@ export class AuthService {
         console.log(err);
       }
   }
-  */
 }

@@ -24,6 +24,7 @@ import { TarjetasComponent } from './componentes/tarjetas/tarjetas.component';
 
 import { AuthService } from './servicios/auth.service';
 import { ApiService } from './servicios/api.service';
+import { FavoritosService } from './servicios/favoritos.service';
 
 
 
@@ -52,7 +53,7 @@ import { ApiService } from './servicios/api.service';
     AngularFireStorageModule,
     AngularFireAuthModule,
   ],
-  providers: [AuthService, ApiService], 
+  providers: [AuthService, ApiService, FavoritosService], 
   bootstrap: [AppComponent]
 })
 export class AppModule { 
