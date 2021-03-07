@@ -20,8 +20,11 @@ import { DetallesComponent } from './componentes/detalles/detalles.component';
 import { ListafavoritosComponent } from './componentes/listafavoritos/listafavoritos.component';
 import { BuscadorComponent } from './componentes/buscador/buscador.component';
 import { PaginacionComponent } from './componentes/paginacion/paginacion.component';
+import { TarjetasComponent } from './componentes/tarjetas/tarjetas.component';
 
 import { AuthService } from './servicios/auth.service';
+import { ApiService } from './servicios/api.service';
+
 
 
 @NgModule({
@@ -38,6 +41,7 @@ import { AuthService } from './servicios/auth.service';
     ListafavoritosComponent,
     BuscadorComponent,
     PaginacionComponent,
+    TarjetasComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +52,7 @@ import { AuthService } from './servicios/auth.service';
     AngularFireStorageModule,
     AngularFireAuthModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService, ApiService], 
   bootstrap: [AppComponent]
 })
 export class AppModule { 

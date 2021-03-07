@@ -12,9 +12,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-/*
-  Acceder(){
+
+  /*Acceder(){
     this.authService.login()
-  }
-  */
+  }*/
 }

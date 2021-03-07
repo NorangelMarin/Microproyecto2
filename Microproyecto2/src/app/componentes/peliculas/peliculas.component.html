@@ -1,3 +1,3 @@
 <section class="peliculas">
-    <button [routerLink]="['/detalles']">detalles pelicula</button>
+    <app-tarjetas [dataentrante]="tarjeta" *ngFor="let tarjeta of tarjetas"></app-tarjetas>
 </section>

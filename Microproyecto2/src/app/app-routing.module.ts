@@ -11,6 +11,7 @@ import { DetallesComponent } from './componentes/detalles/detalles.component';
 import { ListafavoritosComponent } from './componentes/listafavoritos/listafavoritos.component';
 import { BuscadorComponent } from './componentes/buscador/buscador.component';
 import { PaginacionComponent } from './componentes/paginacion/paginacion.component';
+import { TarjetasComponent } from './componentes/tarjetas/tarjetas.component';
 
 const routes: Routes = [
   {path: '', component: InicioComponent},
@@ -24,6 +25,8 @@ const routes: Routes = [
   {path: 'listafavoritos', component: ListafavoritosComponent},
   {path: 'buscador', component: BuscadorComponent},
   {path: 'paginacion', component: PaginacionComponent},
+  {path: 'tarjetas', component: TarjetasComponent},
+
 ];
 
 @NgModule({

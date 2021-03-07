@@ -7,15 +7,14 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
+
   constructor(private Auth: AngularFireAuth) { }
   /*
-  
-async login(): Promise<firebase.User>{
+  async login(): Promise<firebase.User>{
     try{
       const provider = new firebase.auth.GoogleAuthProvider();
       const response = await this.Auth.signInWithPopup(provider);
       console.log(JSON.stringify(response));
-
       if(response.user){
         localStorage.setItem('user', response.user.uid);
         return response.user
@@ -25,6 +24,7 @@ async login(): Promise<firebase.User>{
       console.log(err);
       localStorage.removeItem('user');
     }
+    return null
   }
 
   getCurrentUser(): Observable<firebase.User>{
@@ -32,15 +32,13 @@ async login(): Promise<firebase.User>{
   }
 
   async logout(): Promise<void>{
-    try{
-      await this.Auth.signOut();
-      localStorage.removeItem('user');
-    }
-    catch(err){
-      console.log(err);
-    }
-
+      try{
+        await this.Auth.signOut();
+        localStorage.removeItem('user');
+      }
+      catch(err){
+        console.log(err);
+      }
+  }
   */
-  
-    
 }
