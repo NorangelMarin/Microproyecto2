@@ -4,7 +4,7 @@
 
     button{
         padding: 1%;
-        margin: 2%;
+        margin-bottom: 2%;
         width: 70%;
         background-image: linear-gradient(to bottom right, #2E9AFE,#0101DF);
         color: #fff;
@@ -13,5 +13,6 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 100%;
         font-weight: bold;
+        cursor: pointer;
     }
 }

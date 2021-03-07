@@ -14,6 +14,15 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { PeliculasComponent } from './componentes/peliculas/peliculas.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { ListapeliculasComponent } from './componentes/listapeliculas/listapeliculas.component';
+import { ReservasComponent } from './componentes/reservas/reservas.component';
+import { DetallesComponent } from './componentes/detalles/detalles.component';
+import { ListafavoritosComponent } from './componentes/listafavoritos/listafavoritos.component';
+import { BuscadorComponent } from './componentes/buscador/buscador.component';
+import { PaginacionComponent } from './componentes/paginacion/paginacion.component';
+
+import { AuthService } from './servicios/auth.service';
+
 
 @NgModule({
   declarations: [
@@ -23,6 +32,12 @@ import { LoginComponent } from './componentes/login/login.component';
     NavbarComponent,
     PeliculasComponent,
     LoginComponent,
+    ListapeliculasComponent,
+    ReservasComponent,
+    DetallesComponent,
+    ListafavoritosComponent,
+    BuscadorComponent,
+    PaginacionComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +48,7 @@ import { LoginComponent } from './componentes/login/login.component';
     AngularFireStorageModule,
     AngularFireAuthModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { 
