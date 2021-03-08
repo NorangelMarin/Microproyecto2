@@ -5,7 +5,7 @@
         <ul class="lista">
             <li *ngFor="let pelicula of listapeliculas">
                 <div class="pelicula">
-                    <img class="imagen" [src]="pelicula?.data?.poster_path" alt="poster pelicula" [routerLink]="['/detalles']">
+                    <img class="imagen" src="../../../assets/img/img.png" alt="poster pelicula" [routerLink]="['/detalles']">
                     <div class="infopelicula">
                         <div class="titulo">{{pelicula?.title}}</div>
                         <div class="idiomas">idiomas: {{pelicula?.original_language}}</div>

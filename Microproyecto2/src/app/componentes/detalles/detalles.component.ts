@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DetallesService } from '../../servicios/detalles.service';
 
 @Component({
   selector: 'app-detalles',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetallesComponent implements OnInit {
 
-  constructor() { }
+  public listadetalles: Array<any> = []
+
+  constructor(private detalles: DetallesService) { }
 
   ngOnInit(): void {
+    this.detalles.verDetalles.subscribe(data => {
+      console.log(data)
+      this.listadetalles.push(data);
+    })
   }
 
 }

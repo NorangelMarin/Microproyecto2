@@ -25,6 +25,7 @@ import { TarjetasComponent } from './componentes/tarjetas/tarjetas.component';
 import { AuthService } from './servicios/auth.service';
 import { ApiService } from './servicios/api.service';
 import { FavoritosService } from './servicios/favoritos.service';
+import { DetallesService} from './servicios/detalles.service';
 
 
 
@@ -54,7 +55,7 @@ import { FavoritosService } from './servicios/favoritos.service';
     HttpClientModule,
 
   ],
-  providers: [AuthService, ApiService, FavoritosService], 
+  providers: [AuthService, ApiService, FavoritosService, DetallesService], 
   bootstrap: [AppComponent]
 })
 export class AppModule { 
