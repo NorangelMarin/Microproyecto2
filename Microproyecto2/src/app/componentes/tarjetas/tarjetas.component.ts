@@ -15,8 +15,8 @@ export class TarjetasComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  agregarFavorito(){
-    console.log(this.dataentrante);
+  agregarFavorito(dataentrante){
+    this.favoritos.addFavoritos.emit({data: this.dataentrante})
   }
 
 }

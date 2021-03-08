@@ -1,9 +1,9 @@
-<div class="tarjeta" [routerLink]="['/detalles']">
-    <img class="imagen" [src]="dataentrante?.img" alt="poster pelicula">
+<div class="tarjeta">
+    <img class="imagen" [src]="dataentrante?.img" alt="poster pelicula" [routerLink]="['/detalles']">
     <div class="infopelicula">
         <div class="titulo">{{dataentrante?.titulo}}</div>
         <div class="idiomas">{{dataentrante?.idiomas}}</div>
         <div class="popularidad">{{dataentrante?.popularidad}}</div>
     </div>
-    <button class="favorito">Favorito</button>
+    <button class="favorito" (click)="agregarFavorito(dataentrante)">Favorito</button>
 </div>

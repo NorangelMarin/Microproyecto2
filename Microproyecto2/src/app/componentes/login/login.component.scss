@@ -4,10 +4,17 @@
     display: flex;
     justify-content: center;
     background-color: #fff; 
+    position: fixed;
+    top: -15%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
 
     .Contenido{
         background-image: linear-gradient(to bottom right, #2E9AFE,#0101DF);
         border-radius: 5px;
+        box-shadow: 0px 0px 5px 5px lightgray;
         border: solid black 2px;
         width: 40%;
         padding: 2%;
