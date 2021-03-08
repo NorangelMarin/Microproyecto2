@@ -47,11 +47,12 @@ import { FavoritosService } from './servicios/favoritos.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireAuthModule,
+    HttpClientModule,
+
   ],
   providers: [AuthService, ApiService, FavoritosService], 
   bootstrap: [AppComponent]

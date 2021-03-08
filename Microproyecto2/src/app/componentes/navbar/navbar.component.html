@@ -4,7 +4,6 @@
     </div>
     <ul class="Menu">
         <li><a [routerLink]="['/listapeliculas']">Lista de peliculas</a></li>
-        <li *ngIf="user"><a [routerLink]="['/listafavoritos']">Favoritos</a></li>
         <li *ngIf="!user" class="ingresar"><a [routerLink]="['/login']">Ingresar</a></li>
         <li *ngIf="user" class="salir" (click)="Salir()"><a [routerLink]="['']">Salir</a></li>
     </ul>

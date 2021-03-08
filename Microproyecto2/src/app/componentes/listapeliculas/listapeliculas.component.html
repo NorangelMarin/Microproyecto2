@@ -1,7 +1,19 @@
 <section id="ListaPeliculas">
     <div class="Contenido">
-        <h1>Lista de Peliculas</h1>
+        <h1>Lista de peliculas</h1>
         <app-buscador></app-buscador>
-        <button class="atras" [routerLink]="['']">Atrás</button>
+        <ul class="lista">
+            <li *ngFor="let pelicula of listapeliculas">
+                <div class="pelicula">
+                    <img class="imagen" [src]="pelicula?.data?.poster_path" alt="poster pelicula" [routerLink]="['/detalles']">
+                    <div class="infopelicula">
+                        <div class="titulo">{{pelicula?.title}}</div>
+                        <div class="idiomas">{{pelicula?.original_language}}</div>
+                        <div class="popularidad">{{pelicula?.popularity}}</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <button class="atras" (click)="['']">Atrás</button>
     </div>
 </section>

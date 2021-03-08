@@ -2,18 +2,18 @@
     <div class="Contenido">
         <h1>Favoritos</h1>
         <app-buscador></app-buscador>
-        <ul>
+        <ul class="lista">
             <li *ngFor="let pelicula of listafavoritos">
-                <div class="tarjeta">
-                    <img class="imagen" [src]="pelicula?.data.img" alt="poster pelicula" [routerLink]="['/detalles']">
+                <div class="pelicula">
+                    <img class="imagen" [src]="pelicula?.data?.poster_path" alt="poster pelicula" [routerLink]="['/detalles']">
                     <div class="infopelicula">
-                        <div class="titulo">{{pelicula?.data.titulo}}</div>
-                        <div class="idiomas">{{pelicula?.data.idiomas}}</div>
-                        <div class="popularidad">{{pelicula?.data.popularidad}}</div>
+                        <div class="titulo">{{pelicula?.data?.title}}</div>
+                        <div class="idiomas">{{pelicula?.data?.original_language}}</div>
+                        <div class="popularidad">{{pelicula?.data?.popularity}}</div>
                     </div>
                 </div>
             </li>
         </ul>
-        <button class="atras" [routerLink]="['']">Atrás</button>
+        <button class="atras" (click)="['']">Atrás</button>
     </div>
 </section>

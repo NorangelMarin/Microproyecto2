@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FavoritosService } from '../../servicios/favoritos.service';
+import firebase from 'firebase';
+import { AuthService } from 'src/app/servicios/auth.service';
 
 @Component({
   selector: 'app-tarjetas',
@@ -8,14 +10,19 @@ import { FavoritosService } from '../../servicios/favoritos.service';
 })
 export class TarjetasComponent implements OnInit {
 
+  user: firebase.User = null;
+
   @Input() dataentrante:any;
 
-  constructor(private favoritos: FavoritosService) { }
+  constructor(private favoritos: FavoritosService, private Auth: AuthService) { }
 
   ngOnInit(): void {
+    this.Auth.getCurrentUser().subscribe((user) => {
+      this.user = user;
+    })
   }
 
-  agregarFavorito(dataentrante){
+  agregarFavorito(){
     this.favoritos.addFavoritos.emit({data: this.dataentrante})
   }
 

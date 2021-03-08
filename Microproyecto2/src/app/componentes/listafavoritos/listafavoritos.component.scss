@@ -8,7 +8,7 @@
     .Contenido{
         background-image: linear-gradient(to bottom right, #2E9AFE,#0101DF);
         border-radius: 5px;
-        width: 70%;
+        width:85%;
         padding: 2%;
         margin-top: 6vh;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -18,6 +18,35 @@
             text-align: center;
             padding: 2%;
             color: white;
+        }
+    }
+
+    .lista{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        li{
+            padding: 2%;
+            background-color: #fff;
+            width: 15%;
+            margin: 1.5%;
+        
+            img{
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+        
+            .infopelicula{
+                text-align: center;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+                div{
+                    margin: 5%;
+                }
+            }
         }
     }
 

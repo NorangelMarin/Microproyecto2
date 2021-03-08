@@ -8,12 +8,13 @@ import { FavoritosService } from '../../servicios/favoritos.service';
 })
 export class ListafavoritosComponent implements OnInit {
 
-  constructor(private favoritos: FavoritosService) { }
-
   public listafavoritos: Array<any> = []
+
+  constructor(private favoritos: FavoritosService) { }
 
   ngOnInit(): void {
     this.favoritos.addFavoritos.subscribe(data => {
+      console.log(data)
       this.listafavoritos.push(data);
     })
   }
