@@ -11,7 +11,6 @@ import { AuthService } from 'src/app/servicios/auth.service';
 export class TarjetasComponent implements OnInit {
 
   user: firebase.User = null;
-
   @Input() dataentrante:any;
 
   constructor(private favoritos: FavoritosService, private Auth: AuthService) { }
