@@ -8,8 +8,8 @@
                     <img class="imagen" src="../../../assets/img/img.png" alt="poster pelicula" [routerLink]="['/detalles']">
                     <div class="infopelicula">
                         <div class="titulo">{{pelicula?.data?.title}}</div>
-                        <div class="idiomas">{{pelicula?.data?.original_language}}</div>
-                        <div class="popularidad">{{pelicula?.data?.popularity}}</div>
+                        <div class="idiomas">Idiomas: {{pelicula?.data?.original_language}}</div>
+                        <div class="popularidad">Popularidad: {{pelicula?.data?.popularity}}</div>
                     </div>
                 </div>
             </li>
